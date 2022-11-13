@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单标签：主要用于登录，注册页面 -->
+
+    <!-- 1.表单域：将所有表单信息包含在这个范围中，
+    action：服务器地址
+    method：设置表单的提交方式（get：提交时显示信息；post：提交时不显示信息。）
+    name:表单的名称 -->
+    <form action="" method="" name=""></form>
+    
+    <!-- input标签：1.根据其type的不同展现不同的功能， 
+    2.name:表单的名字,给后台识别。
+    3.value：定义input的值，一是可以定义显示的内容，二是为了给后台人员识别.
+
+    <!-- type常见属性值 -->
+
+    <!-- 1.button：定义可点击按钮，用value可定义其按钮显示的内容。 -->
+    <input type="button" value="发送" value="发送"><br>
+
+    <!-- 2.text:文本框
+        可以设置maxlength属性来限制最多输入字符量。 -->
+    <input type="text" placeholder="登录" maxlength="6"><br>
+
+    <!-- 3.password:定义密码字段，该字段中的字符会被隐藏 
+        可以设置maxlength属性来限制最多输入字符量。-->
+    <input type="password" placeholder="密码" maxlength="10"><br>
+
+    <!-- 4.submit：定义提交按钮，会将表单数据发送给服务器，默认显示的是提交，用value可定义其按钮显示的内容。-->
+    <input type="submit" value="登录/注册" ><br>
+
+    <!-- 5.radio:定义单选按钮，只能选择一个，但要选择的几个按钮都得有相同的name，否则就不能实现多选一的效果。
+        可以给按钮加checked的属性，使其页面一打开就是被默认选中的，单选框中只能给一个按钮加，复选框中可以给多个按钮加。-->
+    性别：男<input type="radio" value="男" checked="checked">女<input type="radio" value="女">双性人<input type="radio" value="双性人"><br>
+    性别：男<input type="radio" name="sex"  value="男">女<input type="radio" name="sex" value="女">双性人<input type="radio" name="sex" value="双性人"><br>
+
+    <!-- 6.checkbox：定义多选按钮。 -->
+    爱好：篮球<input type="checkbox" value="篮球" checked="checked">羽毛球<input type="checkbox" value="羽毛球" checked="checked">乒乓球<input type="checkbox" value="乒乓球"><br>
+
+    <!-- 7.reset:定义重置按钮，清除表单中的所有数据。默认显示的是重置，用value可定义其按钮显示的内容。 -->
+    <form action="">
+    <input type="reset" value="清除"><br>
+    <input type="text" placeholder="登录" ><br>
+    <input type="password" placeholder="密码" ><br>
+    </form><br>
+
+    <!-- 补充：lable标签用于绑定文字与标签，eg：在性别选择中，你不用点击男旁边的圆圈，只需点击男也可以在圆圈里打钩。
+    注意lable的for的属性值必须和需要绑定的那个标签的id值一样才能实现效果。 -->
+   <label for="boy">男</label> <input type="radio" name="sex"  value="男" id="boy">
+   <label for="girl">女</label><input type="radio" name="sex" value="女" id="girl">
+   <label for="Bisexual people">双性人</label><input type="radio" name="sex" value="双性人" id="Bisexual people"><br>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
